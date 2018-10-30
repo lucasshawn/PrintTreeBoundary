@@ -9,3 +9,14 @@ c:\users\shawn\Source\Repos\PrintTreeBoundary\PrintTreeBoundary\bin\Debug\netcor
 c:\users\shawn\Source\Repos\PrintTreeBoundary\PrintTreeBoundary\bin\Debug\netcoreapp2.0\PrintTreeBoundary.pdb
 c:\users\shawn\Source\Repos\PrintTreeBoundary\PrintTreeBoundary\obj\Debug\netcoreapp2.0\PrintTreeBoundary.dll
 c:\users\shawn\Source\Repos\PrintTreeBoundary\PrintTreeBoundary\obj\Debug\netcoreapp2.0\PrintTreeBoundary.pdb
+C:\Users\Shawn\Source\Repos\PrintTreeBoundary2\PrintTreeBoundary\bin\Debug\netcoreapp2.0\PrintTreeBoundary.deps.json
+C:\Users\Shawn\Source\Repos\PrintTreeBoundary2\PrintTreeBoundary\bin\Debug\netcoreapp2.0\PrintTreeBoundary.runtimeconfig.json
+C:\Users\Shawn\Source\Repos\PrintTreeBoundary2\PrintTreeBoundary\bin\Debug\netcoreapp2.0\PrintTreeBoundary.runtimeconfig.dev.json
+C:\Users\Shawn\Source\Repos\PrintTreeBoundary2\PrintTreeBoundary\bin\Debug\netcoreapp2.0\PrintTreeBoundary.dll
+C:\Users\Shawn\Source\Repos\PrintTreeBoundary2\PrintTreeBoundary\bin\Debug\netcoreapp2.0\PrintTreeBoundary.pdb
+C:\Users\Shawn\Source\Repos\PrintTreeBoundary2\PrintTreeBoundary\obj\Debug\netcoreapp2.0\PrintTreeBoundary.csprojAssemblyReference.cache
+C:\Users\Shawn\Source\Repos\PrintTreeBoundary2\PrintTreeBoundary\obj\Debug\netcoreapp2.0\PrintTreeBoundary.csproj.CoreCompileInputs.cache
+C:\Users\Shawn\Source\Repos\PrintTreeBoundary2\PrintTreeBoundary\obj\Debug\netcoreapp2.0\PrintTreeBoundary.AssemblyInfoInputs.cache
+C:\Users\Shawn\Source\Repos\PrintTreeBoundary2\PrintTreeBoundary\obj\Debug\netcoreapp2.0\PrintTreeBoundary.AssemblyInfo.cs
+C:\Users\Shawn\Source\Repos\PrintTreeBoundary2\PrintTreeBoundary\obj\Debug\netcoreapp2.0\PrintTreeBoundary.dll
+C:\Users\Shawn\Source\Repos\PrintTreeBoundary2\PrintTreeBoundary\obj\Debug\netcoreapp2.0\PrintTreeBoundary.pdb

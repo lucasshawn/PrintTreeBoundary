@@ -1,6 +1,7 @@
 ﻿using PrintTreeBoundary.CountMethods;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using Xunit;
 
@@ -17,14 +18,22 @@ namespace PrintTreeBoundary
                 TreeFactory.Tree3(),
                 TreeFactory.SingleNodeTree(),
                 TreeFactory.WeightedRight(),
-                TreeFactory.BalancedSizeN(10)
+                // Repeat same test to get an idea for average for larger trees
+                TreeFactory.BalancedSizeN(20),
+                TreeFactory.BalancedSizeN(20),
+                TreeFactory.BalancedSizeN(20),
+                TreeFactory.BalancedSizeN(20),
+                TreeFactory.BalancedSizeN(20),
+                TreeFactory.BalancedSizeN(20),
+                TreeFactory.BalancedSizeN(20),
+                TreeFactory.BalancedSizeN(20),
             };
 
             // Create our counting functions
             IList<ICountBinaryTreeBoundary> countFunctions = new ICountBinaryTreeBoundary[] {
                 new CountUsingLevelOrder(),
-                new CountUsingEdgeTraversal(),
-                
+                new CountUsingEdgeTraversal(CountOptions.Iterative),
+                new CountUsingEdgeTraversal(CountOptions.Recursive)
             };
 
             // Count using each function and compare output - Fail the test where outputs are not equal
@@ -34,8 +43,14 @@ namespace PrintTreeBoundary
                 string[] results = new string[countFunctions.Count];
                 for(int current = 0; current < results.Length; current++)
                 {
-                    results[current] = countFunctions[current].GetOutputSequence(tree).ToCommaString();
-                    Console.WriteLine($"Tree({currentTree}) Function({countFunctions[current].GetType().Name}): {results[current]}");
+                    Stopwatch timer = new Stopwatch();
+                    timer.Start();
+                    // Run 100 iterations each so we can get decent time measurements
+                    for (int i = 0; i < 1; i++)
+                    {
+                        results[current] = countFunctions[current].GetOutputSequence(tree).ToCommaString();
+                    }
+                    Console.WriteLine($"Tree({currentTree}) Function({countFunctions[current]}) ExecutionTime({timer.ElapsedMilliseconds}ms): {results[current]}");
                 }
                 bool matchingOutput = results.Distinct().Count() == 1;
                 Console.WriteLine($"\tMatching Output? {matchingOutput}");

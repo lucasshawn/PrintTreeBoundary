@@ -61,5 +61,10 @@ namespace PrintTreeBoundary
             traverseRecursive(rootNode.Left, level + 1, levelMap);
             traverseRecursive(rootNode.Right, level + 1, levelMap);
         }
+
+        public override string ToString()
+        {
+            return $"{nameof(CountUsingLevelOrder)}";
+        }
     }
 }

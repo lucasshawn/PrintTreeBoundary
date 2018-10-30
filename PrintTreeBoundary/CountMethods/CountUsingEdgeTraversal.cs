@@ -5,9 +5,11 @@ namespace PrintTreeBoundary.CountMethods
 {
     internal class CountUsingEdgeTraversal : ICountBinaryTreeBoundary
     {
-        public CountUsingEdgeTraversal(CountOptions options = CountOptions.Recursive)
+        bool isRecursive = false;
+
+        public CountUsingEdgeTraversal(CountOptions options = CountOptions.Iterative)
         {
-            if (options == CountOptions.Iterative) throw new NotImplementedException("There is no recursive option for CountUsingEdgeTraversal.GetOutputSequence.");
+            if (options == CountOptions.Recursive) isRecursive = true;
         }
 
         public IList<TreeNode> GetOutputSequence(TreeNode rootNode)
@@ -81,7 +83,17 @@ namespace PrintTreeBoundary.CountMethods
             return output;
         }
 
-        private IList<TreeNode> PrintLeaf(TreeNode t)
+        private IList<TreeNode> PrintLeaf(TreeNode rootNode)
+        {
+            IList<TreeNode> nodes = new List<TreeNode>();
+            if (isRecursive)
+                PrintLeafRecursive(rootNode, nodes);
+            else
+                nodes = PrintLeafIterative(rootNode);
+            return nodes;
+        }
+
+        private IList<TreeNode> PrintLeafIterative(TreeNode t)
         {
             List<TreeNode> output = new List<TreeNode>();
             Queue<TreeNode> q = new Queue<TreeNode>();
@@ -97,6 +109,20 @@ namespace PrintTreeBoundary.CountMethods
                 q.Enqueue(tn.Right);
             }
             return output;
+        }
+
+        private void PrintLeafRecursive(TreeNode t, IList<TreeNode> nodes)
+        {
+            if (t == null) return;
+            if (t.Left == null && t.Right == null)
+                nodes.Add(t);
+            PrintLeafRecursive(t.Left, nodes);
+            PrintLeafRecursive(t.Right, nodes);
+        }
+
+        public override string ToString()
+        {
+            return $"{nameof(CountUsingEdgeTraversal)} isRecursive({isRecursive})";
         }
     }
 }

@@ -8,7 +8,9 @@ namespace PrintTreeBoundary
     {
         public static string ToCommaString(this IList<TreeNode> nodes)
         {
-            return string.Join(',', nodes);
+            var s = string.Join(',', nodes);
+            if (s.Length > 100) return s.Substring(0, 100) + "...";
+            return s;
         }
     }
 }
