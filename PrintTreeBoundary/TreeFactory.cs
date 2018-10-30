@@ -1,11 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace PrintTreeBoundary
+﻿namespace PrintTreeBoundary
 {
     internal static class TreeFactory
     {
+        internal static TreeNode SingleNodeTree()
+        {
+            return new TreeNode() { Data = 1 };
+        }
+
+        internal static TreeNode WeightedRight()
+        {
+            TreeNode tn = new TreeNode() { Data = 1 };
+            tn.Right = new TreeNode() { Data = 2 };
+            tn.Right.Right = new TreeNode() { Data = 3 };
+            return tn;
+        }
         internal static TreeNode Tree1()
         {
             TreeNode tn = new TreeNode() { Data = 1 };

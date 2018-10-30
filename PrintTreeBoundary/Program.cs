@@ -14,7 +14,10 @@ namespace PrintTreeBoundary
             IList<TreeNode> trees = new TreeNode[] {
                 TreeFactory.Tree1(),
                 TreeFactory.Tree2(),
-                TreeFactory.Tree3()
+                TreeFactory.Tree3(),
+                TreeFactory.SingleNodeTree(),
+                TreeFactory.WeightedRight(),
+                TreeFactory.BalancedSizeN(10)
             };
 
             // Create our counting functions

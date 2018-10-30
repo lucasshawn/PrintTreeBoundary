@@ -860,11 +860,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Shawn\\Source\\Repos\\PrintTreeBoundary\\PrintTreeBoundary\\PrintTreeBoundary.csproj",
+      "projectUniqueName": "C:\\Users\\Shawn\\Source\\Repos\\PrintTreeBoundary2\\PrintTreeBoundary\\PrintTreeBoundary.csproj",
       "projectName": "PrintTreeBoundary",
-      "projectPath": "C:\\Users\\Shawn\\Source\\Repos\\PrintTreeBoundary\\PrintTreeBoundary\\PrintTreeBoundary.csproj",
+      "projectPath": "C:\\Users\\Shawn\\Source\\Repos\\PrintTreeBoundary2\\PrintTreeBoundary\\PrintTreeBoundary.csproj",
       "packagesPath": "C:\\Users\\Shawn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Shawn\\Source\\Repos\\PrintTreeBoundary\\PrintTreeBoundary\\obj\\",
+      "outputPath": "C:\\Users\\Shawn\\Source\\Repos\\PrintTreeBoundary2\\PrintTreeBoundary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
