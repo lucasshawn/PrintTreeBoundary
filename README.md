@@ -1,4 +1,4 @@
-# PrintTreeBoundary
+# Print Tree Boundary
 Interview question from [Larry](mailto:larry.zhe@oracle.com) at Oracle.  Solved with:
 * Edge traversal (walk left, walk bottom, walk right)
 
