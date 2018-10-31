@@ -1,5 +1,5 @@
 # Print Tree Boundary
-Interview question from [Larry](mailto:larry.zhe@oracle.com) at Oracle.  Solved with:
+Interview question from [Larry](mailto:larry.zhu@oracle.com) at Oracle.  Solved with:
 * Edge traversal (walk left, walk bottom, walk right)
 
    * Iterative (leaf count)
